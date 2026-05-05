@@ -35,7 +35,7 @@ export default function Footer() {
     <img
       src="/logo.png"
       alt="Walshkon Consultants"
-      className="h-52 w-auto object-contain bg-white"
+      className="h-52 w-auto object-contain"
     />
   </Link>
 
@@ -121,8 +121,8 @@ export default function Footer() {
             <div>
               <p className="font-medium text-white">Address:</p>
               <p>
-                Unit 307-B, 3016 5 Ave NE, <br />
-                Calgary, AB T2A 5L7
+                12885 80 Ave Unit 201,  <br />
+                Surrey, BC V3W 0K8
               </p>
             </div>
           </div>

@@ -78,7 +78,7 @@ export default function ContactPage() {
               { label: "Email", value: "info@walshkonconsultant.com" },
               {
                 label: "Location",
-                value: "Unit 307-B, 3016 5 Ave NE, Calgary, AB T2A 5L7",
+                value: "12885 80 Ave Unit 201, Surrey, BC V3W 0K8",
               },
             ].map((item, i) => (
               <motion.div
