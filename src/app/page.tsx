@@ -84,7 +84,7 @@ export default function Home() {
             <span className="text-[#26374A]"> 
              <LocationEdit/>
             </span>
-            <p className="text-lg text-gray-800"> 12885 80 Ave Unit 201, Surrey, BC V3W 0K8</p>
+            <p className="text-lg text-gray-800"> Unit 307-B , 3016 5 Ave NE, Calgary, AB T2A 5L7</p>
             
           </div>
 

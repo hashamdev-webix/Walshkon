@@ -46,7 +46,7 @@ export default function ContactStrip() {
             <div>
               <p className="text-sm text-gray-500">Location</p>
               <p className="font-semibold text-gray-900 text-sm leading-relaxed">
-               12885 80 Ave Unit 201, Surrey, BC V3W 0K8
+               Unit 307-B , 3016 5 Ave NE, Calgary, AB T2A 5L7
               </p>
             </div>
           </div>

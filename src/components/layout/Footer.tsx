@@ -31,13 +31,16 @@ export default function Footer() {
   initial={{ opacity: 0, y: 30 }}
   whileInView={{ opacity: 1, y: 0 }}
 >
-  <Link href="/" className="flex items-center mb-4 ">
-    <img
-      src="/logo.png"
-      alt="Walshkon Consultants"
-      className="h-52 w-auto object-contain"
-    />
-  </Link>
+ <Link href="/" className="flex items-center mb-4">
+  <div className="h-52 w-52 rounded-full overflow-hidden bg-white flex items-center justify-center">
+   <img
+  src="/logo.png"
+  alt="Walshkon Consultants"
+  className="h-52 w-52 object-cover"
+  style={{ clipPath: "circle(50%)" }}
+/>
+  </div>
+</Link>
 
   <p className="text-sm text-gray-300 leading-relaxed mb-6">
     Dedicated to providing quality education and fostering holistic
@@ -121,8 +124,8 @@ export default function Footer() {
             <div>
               <p className="font-medium text-white">Address:</p>
               <p>
-                12885 80 Ave Unit 201,  <br />
-                Surrey, BC V3W 0K8
+               Unit 307-B , 3016 5 Ave NE,   <br />
+                Calgary, AB T2A 5L7
               </p>
             </div>
           </div>
