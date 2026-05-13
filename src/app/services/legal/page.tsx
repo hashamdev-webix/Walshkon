@@ -1,9 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, Link } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function Page() {
+  const router=useRouter()
   return (
     <div className="bg-white">
 {/* HERO */}
@@ -20,6 +22,13 @@ export default function Page() {
           >
           Legal Services for Indians – India Matters
           </motion.h1>
+
+ <motion.p
+           
+            className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto my-2"
+          >
+       *Our legal services are provided exclusively within the jurisdiction of India.
+          </motion.p>
 
           <motion.p
            
@@ -307,6 +316,12 @@ export default function Page() {
         <p className="text-gray-600 mb-6 text-lg max-w-2xl mx-auto">
         Contact our legal professionals today and get accurate, timely, and reliable support for all India-related legal matters.
         </p>
+        <button
+          onClick={()=>router.push("/contact")}
+          className="bg-[#26374A] text-white px-4 md:px-6 py-2.5 md:py-3 text-sm md:text-base rounded-md font-medium hover:bg-[#444444] transition cursor-pointer"
+        >
+          Contact Us
+        </button>
       </section>
 
     </div>
