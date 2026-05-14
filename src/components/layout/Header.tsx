@@ -6,8 +6,9 @@ import Link from "next/link";
 
 const services = [
   { name: "Paralegal service in Canada", path: "/services/paralegal" },
-  { name: "Immigration", path: "/services/immigration" },
+  
   { name: "Legal services for Indians – India matters", path: "/services/legal" },
+  { name: "Immigration", path: "/services/immigration" },
   { name: "Recruitment", path: "/services/recruitment" },
   { name: "IT Services", path: "/services/it-services" },
   { name: "Digital Marketing", path: "/services/digital-marketing" },
