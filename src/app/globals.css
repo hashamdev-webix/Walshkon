@@ -83,6 +83,23 @@ h1, h2, h3, h4, h5, h6 {
   animation: marquee 40s linear infinite;
 }
 
+@keyframes most-requested-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.most-requested-track {
+  animation: most-requested-scroll 35s linear infinite;
+}
+
+.most-requested-track:hover {
+  animation-play-state: paused;
+}
+
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
