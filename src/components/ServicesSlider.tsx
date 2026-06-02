@@ -30,9 +30,9 @@ const repeatedServices = [...services, ...services];
 
 export default function ServicesSlider() {
   return (
-    <section className="bg-white py-12 md:py-14 overflow-hidden">
+    <section className="bg-white  overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-[#26374A]">
+        <h2 className="text-4xl md:text-4xl font-extrabold text-[#26374A]">
           Most Requested
         </h2>
 

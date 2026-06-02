@@ -1,3 +1,4 @@
+import Footer from "@/components/layout/Footer";
 import {
   BriefcaseBusiness,
   Building2,
@@ -132,29 +133,32 @@ export default async function CountryServicesPage({ params }: PageProps) {
         </div>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {(isCanada ? canadaServices : canadaServices).map(({ Icon, ...service }) => (
-            <Link
-              key={service.href}
-              href={service.href}
-              className="group flex min-h-[270px] flex-col rounded-md border border-gray-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
-            >
-              <div className="flex h-14 w-14 items-center justify-center rounded-md bg-[#26374A] text-white">
-                <Icon size={28} />
-              </div>
-              <h2 className="mt-6 text-xl font-extrabold leading-snug text-[#26374A]">
-                {service.name}
-              </h2>
-              <div className="mt-4 h-1 w-14 bg-[#b90a0a]" />
-              <p className="mt-5 flex-1 text-sm leading-relaxed text-gray-700">
-                {service.description}
-              </p>
-              <span className="mt-6 inline-flex items-center gap-2 font-semibold text-[#26374A] group-hover:text-[#b90a0a]">
-                Explore Service <span aria-hidden="true">-&gt;</span>
-              </span>
-            </Link>
-          ))}
+          {(isCanada ? canadaServices : canadaServices).map(
+            ({ Icon, ...service }) => (
+              <Link
+                key={service.href}
+                href={service.href}
+                className="group flex min-h-[270px] flex-col rounded-md border border-gray-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+              >
+                <div className="flex h-14 w-14 items-center justify-center rounded-md bg-[#26374A] text-white">
+                  <Icon size={28} />
+                </div>
+                <h2 className="mt-6 text-xl font-extrabold leading-snug text-[#26374A]">
+                  {service.name}
+                </h2>
+                <div className="mt-4 h-1 w-14 bg-[#b90a0a]" />
+                <p className="mt-5 flex-1 text-sm leading-relaxed text-gray-700">
+                  {service.description}
+                </p>
+                <span className="mt-6 inline-flex items-center gap-2 font-semibold text-[#26374A] group-hover:text-[#b90a0a]">
+                  Explore Service <span aria-hidden="true">-&gt;</span>
+                </span>
+              </Link>
+            ),
+          )}
         </div>
       </div>
+      <Footer />
     </section>
   );
 }

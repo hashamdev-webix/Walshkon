@@ -1,6 +1,7 @@
 "use client";
 
 import FAQ from "@/components/FAQ";
+import Footer from "@/components/layout/Footer";
 import { motion, Variants } from "framer-motion";
 
 const fadeUp: Variants = {
@@ -24,7 +25,6 @@ const stagger: Variants = {
 export default function ContactPage() {
   return (
     <div className="bg-white text-gray-800">
-
       {/* HERO */}
       <section className="relative h-[300px] flex items-center justify-center bg-gray-100 overflow-hidden">
         <motion.img
@@ -47,7 +47,6 @@ export default function ContactPage() {
 
       {/* MAIN SECTION */}
       <section className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12">
-
         {/* LEFT SIDE */}
         <motion.div
           initial="hidden"
@@ -59,16 +58,12 @@ export default function ContactPage() {
             variants={fadeUp}
             className="text-4xl font-bold mb-4 text-[#26374A]"
           >
-            Let’s Connect with{" "}
-            <span className="">Walshkon Consultants</span>
+            Let’s Connect with <span className="">Walshkon Consultants</span>
           </motion.h2>
 
-          <motion.p
-            variants={fadeUp}
-            className="text-gray-600 mb-8"
-          >
-            Whether you’re planning to study, work, or settle abroad — our expert
-            consultants will guide you at every step.
+          <motion.p variants={fadeUp} className="text-gray-600 mb-8">
+            Whether you’re planning to study, work, or settle abroad — our
+            expert consultants will guide you at every step.
           </motion.p>
 
           {/* CONTACT CARDS */}
@@ -107,7 +102,6 @@ export default function ContactPage() {
           </h3>
 
           <form className="space-y-4">
-
             <div>
               <label className="text-sm font-medium">Name *</label>
               <input
@@ -190,6 +184,7 @@ export default function ContactPage() {
             loading="lazy"
           ></iframe>
         </motion.div>
+        <Footer />
       </section>
     </div>
   );
