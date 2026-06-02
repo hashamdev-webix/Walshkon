@@ -73,7 +73,7 @@ export default function ContactPage() {
               { label: "Email", value: "info@walshkonconsultant.com" },
               {
                 label: "Location",
-                value: "Unit 307-B , 3016 5 Ave NE, Calgary, AB T2A 5L7",
+                value: "Unit 168007, PO Box 7169, Poole, BH15 9EL",
               },
             ].map((item, i) => (
               <motion.div
