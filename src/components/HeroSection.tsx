@@ -71,7 +71,7 @@ export default function HeroSection() {
       <div className="max-w-7xl mx-auto px-4 md:px-6 ">
         <div className="grid lg:grid-cols-[0.85fr_auto_1.55fr] gap-6 lg:gap-8 items-center">
           <div className="max-w-xl">
-            <h1 className="text-5xl font-extrabold leading-tight text-[#26374A]">
+            <h1 className="text-4xl font-extrabold leading-tight text-[#26374A]">
               Choose Your Country
               <br />
               to Get Started

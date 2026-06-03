@@ -1,6 +1,7 @@
 "use client";
 
 import Footer from "@/components/layout/Footer";
+import ServiceBreadcrumb from "@/components/ServiceBreadcrumb";
 import { motion } from "framer-motion";
 import { CheckCircle, Link } from "lucide-react";
 import { useRouter } from "next/navigation";
@@ -16,6 +17,8 @@ export default function Page() {
           initial="hidden"
           animate="show"
         >
+          <ServiceBreadcrumb current="Legal Services for Indians" />
+
           <motion.h1 className="text-5xl font-extrabold tracking-tight mb-6 text-[#26374A] ">
             Legal Services for Indians – India Matters
           </motion.h1>

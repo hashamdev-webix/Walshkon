@@ -6,6 +6,7 @@ import StudyVisa from "@/components/immigration/StudyVisa";
 import VisitorVisa from "@/components/immigration/VisitorVisa";
 import WorkVisa from "@/components/immigration/WorkVisa";
 import Footer from "@/components/layout/Footer";
+import ServiceBreadcrumb from "@/components/ServiceBreadcrumb";
 import { motion, Variants } from "motion/react";
 import { useRouter } from "next/navigation";
 
@@ -35,6 +36,7 @@ export default function Page() {
   return (
     <div className="bg-background text-foreground">
       <section className="relative py-24 text-center bg-gradient-to-b from-gray-50 to-white">
+        <ServiceBreadcrumb current="Immigration" />
         <StudyVisa />
       </section>
 

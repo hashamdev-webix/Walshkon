@@ -1,6 +1,7 @@
 "use client";
 
 import Footer from "@/components/layout/Footer";
+import ServiceBreadcrumb from "@/components/ServiceBreadcrumb";
 import { CheckCircle } from "lucide-react";
 import { motion, Variants } from "motion/react";
 
@@ -36,6 +37,8 @@ export default function Page() {
           initial="hidden"
           animate="show"
         >
+          <ServiceBreadcrumb current="Paralegal Services in Canada" />
+
           <motion.h1
             variants={fadeUp}
             className="text-5xl md:text-6xl font-extrabold tracking-tight mb-6 text-[#26374A] "

@@ -15,7 +15,7 @@ export default function ContactStrip() {
 
             <div>
               <p className="text-sm text-gray-500">Call Us</p>
-              <p className="font-semibold text-gray-900">+1 226-782-0177</p>
+              <p className="font-semibold text-gray-900">+44 7426971974</p>
             </div>
           </div>
 

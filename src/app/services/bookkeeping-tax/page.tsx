@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 import Link from "next/link";
 import Footer from "@/components/layout/Footer";
+import ServiceBreadcrumb from "@/components/ServiceBreadcrumb";
 
 const LifeInsurancePage = () => {
   return (
@@ -12,6 +13,8 @@ const LifeInsurancePage = () => {
       {/* ================= HERO / HEADER ================= */}
       <section className="py-20 bg-gray-100">
         <div className="max-w-6xl mx-auto px-6 text-center">
+          <ServiceBreadcrumb current="Life Insurance" />
+
           <motion.h2
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}

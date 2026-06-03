@@ -69,7 +69,7 @@ export default function ContactPage() {
           {/* CONTACT CARDS */}
           <motion.div className="space-y-4" variants={stagger}>
             {[
-              { label: "Call", value: "+1 226-782-0177" },
+              { label: "Call", value: "+44 7426971974" },
               { label: "Email", value: "info@walshkonconsultant.com" },
               {
                 label: "Location",
