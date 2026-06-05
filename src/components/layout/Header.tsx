@@ -11,15 +11,20 @@ const landingMenuItems = [
   { name: "Contact", path: "/contact" },
 ];
 
-const services = [
-  { name: "Paralegal services in Canada", path: "/services/paralegal" },
-  { name: "Immigration", path: "/services/immigration" },
+const sharedServices = [
   { name: "Recruitment", path: "/services/recruitment" },
   { name: "IT Services", path: "/services/it-services" },
   { name: "Digital Marketing", path: "/services/digital-marketing" },
   { name: "Mortgage", path: "/services/mortgage" },
   { name: "Buy, Sell & Rent Homes", path: "/services/real-estate" },
   { name: "Finance", path: "/services/finance" },
+  { name: "Bookkeeping and Tax Services", path: "/services/bookkeeping-tax" },
+];
+
+const defaultServices = [
+  { name: "Paralegal services in Canada", path: "/services/paralegal" },
+  { name: "Legal services for Indians only - India matters", path: "/services/legal" },
+  ...sharedServices,
 ];
 
 export default function Header() {
@@ -28,6 +33,29 @@ export default function Header() {
   const [servicesOpen, setServicesOpen] = useState(false);
 
   const isLandingPage = pathname === "/";
+  const countrySlug = pathname.startsWith("/countries/")
+    ? pathname.split("/")[2]
+    : "";
+  const services =
+    countrySlug === "india"
+      ? [
+          {
+            name: "Legal services for Indians only - India matters",
+            path: "/services/legal",
+          },
+          ...sharedServices,
+        ]
+      : countrySlug === "canada"
+        ? [
+            {
+              name: "Paralegal services in Canada",
+              path: "/services/paralegal",
+            },
+            ...sharedServices,
+          ]
+        : countrySlug
+          ? sharedServices
+          : defaultServices;
 
   const closeMenu = () => {
     setOpen(false);

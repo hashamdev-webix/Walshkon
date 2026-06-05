@@ -11,7 +11,7 @@ const countries = [
     image:
       "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=900&q=80",
     statement:
-      "Immigration, legal, business, and documentation support for clients with India-related needs.",
+      "India legal matters plus recruitment, IT, marketing, mortgage, real estate, finance, bookkeeping, and tax support.",
   },
   {
     name: "Canada",
@@ -19,7 +19,7 @@ const countries = [
     image:
       "https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=900&q=80",
     statement:
-      "Immigration, legal, finance, recruitment, and settlement support for clients across Canada.",
+      "Paralegal service plus recruitment, IT, marketing, mortgage, real estate, finance, bookkeeping, and tax support.",
   },
   {
     name: "UK",
@@ -27,7 +27,7 @@ const countries = [
     image:
       "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=900&q=80",
     statement:
-      "Professional consulting support for immigration, legal, and business-related services in the UK.",
+      "Professional support for recruitment, IT, marketing, mortgage, real estate, finance, bookkeeping, and tax services.",
   },
   {
     name: "Hong Kong",
@@ -35,7 +35,7 @@ const countries = [
     image:
       "https://images.unsplash.com/photo-1536599018102-9f803c140fc1?auto=format&fit=crop&w=900&q=80",
     statement:
-      "Consulting support for clients needing documentation, business, legal, and professional services related to Hong Kong.",
+      "Professional support for recruitment, IT, marketing, mortgage, real estate, finance, bookkeeping, and tax services.",
   },
   {
     name: "Belize",
@@ -43,7 +43,7 @@ const countries = [
     image:
       "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80",
     statement:
-      "Professional support for clients seeking immigration, documentation, business, and service guidance related to Belize.",
+      "Professional support for recruitment, IT, marketing, mortgage, real estate, finance, bookkeeping, and tax services.",
   },
 ];
 

@@ -1,9 +1,8 @@
-import Footer from "@/components/layout/Footer";
 import {
   BriefcaseBusiness,
   Building2,
   ChartNoAxesCombined,
-  FileText,
+  Calculator,
   Gavel,
   Home,
   Laptop,
@@ -16,7 +15,7 @@ const countryPages = {
   india: {
     name: "India",
     intro:
-      "Immigration, legal, business, and documentation support for clients with India-related needs.",
+      "Select from India legal matters and professional business support services.",
   },
   canada: {
     name: "Canada",
@@ -24,34 +23,19 @@ const countryPages = {
   },
   uk: {
     name: "UK",
-    intro:
-      "Professional consulting support for immigration, legal, and business-related services in the UK.",
+    intro: "Select a professional business support service to explore more.",
   },
   "hong-kong": {
     name: "Hong Kong",
-    intro:
-      "Consulting support for clients needing documentation, business, legal, and professional services related to Hong Kong.",
+    intro: "Select a professional business support service to explore more.",
   },
   belize: {
     name: "Belize",
-    intro:
-      "Professional support for clients seeking immigration, documentation, business, and service guidance related to Belize.",
+    intro: "Select a professional business support service to explore more.",
   },
 };
 
-const canadaServices = [
-  {
-    name: "Paralegal Services in Canada",
-    href: "/services/paralegal",
-    description: "Legal documentation and paralegal support.",
-    Icon: Gavel,
-  },
-  {
-    name: "Immigration",
-    href: "/services/immigration",
-    description: "Expert guidance for visas, permits, and applications.",
-    Icon: FileText,
-  },
+const sharedServices = [
   {
     name: "Recruitment",
     href: "/services/recruitment",
@@ -88,7 +72,37 @@ const canadaServices = [
     description: "Smart financial solutions for your future.",
     Icon: ChartNoAxesCombined,
   },
+  {
+    name: "Bookkeeping and Tax Services",
+    href: "/services/bookkeeping-tax",
+    description: "Organized bookkeeping and tax support for your needs.",
+    Icon: Calculator,
+  },
 ];
+
+const servicesByCountry = {
+  india: [
+    {
+      name: "Legal Services for Indians only - India matters",
+      href: "/services/legal",
+      description: "India-focused legal support for Indian matters.",
+      Icon: Gavel,
+    },
+    ...sharedServices,
+  ],
+  canada: [
+  {
+    name: "Paralegal Services in Canada",
+    href: "/services/paralegal",
+    description: "Legal documentation and paralegal support.",
+    Icon: Gavel,
+  },
+    ...sharedServices,
+  ],
+  uk: sharedServices,
+  "hong-kong": sharedServices,
+  belize: sharedServices,
+};
 
 type PageProps = {
   params: Promise<{
@@ -104,7 +118,8 @@ export default async function CountryServicesPage({ params }: PageProps) {
     notFound();
   }
 
-  const isCanada = slug === "canada";
+  const services =
+    servicesByCountry[slug as keyof typeof servicesByCountry] ?? sharedServices;
 
   return (
     <section className="bg-white py-12 md:py-16">
@@ -133,32 +148,29 @@ export default async function CountryServicesPage({ params }: PageProps) {
         </div>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {(isCanada ? canadaServices : canadaServices).map(
-            ({ Icon, ...service }) => (
-              <Link
-                key={service.href}
-                href={service.href}
-                className="group flex min-h-[270px] flex-col rounded-md border border-gray-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
-              >
-                <div className="flex h-14 w-14 items-center justify-center rounded-md bg-[#26374A] text-white">
-                  <Icon size={28} />
-                </div>
-                <h2 className="mt-6 text-xl font-extrabold leading-snug text-[#26374A]">
-                  {service.name}
-                </h2>
-                <div className="mt-4 h-1 w-14 bg-[#b90a0a]" />
-                <p className="mt-5 flex-1 text-sm leading-relaxed text-gray-700">
-                  {service.description}
-                </p>
-                <span className="mt-6 inline-flex items-center gap-2 font-semibold text-[#26374A] group-hover:text-[#b90a0a]">
-                  Explore Service <span aria-hidden="true">-&gt;</span>
-                </span>
-              </Link>
-            ),
-          )}
+          {services.map(({ Icon, ...service }) => (
+            <Link
+              key={service.href}
+              href={service.href}
+              className="group flex min-h-[270px] flex-col rounded-md border border-gray-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+            >
+              <div className="flex h-14 w-14 items-center justify-center rounded-md bg-[#26374A] text-white">
+                <Icon size={28} />
+              </div>
+              <h2 className="mt-6 text-xl font-extrabold leading-snug text-[#26374A]">
+                {service.name}
+              </h2>
+              <div className="mt-4 h-1 w-14 bg-[#b90a0a]" />
+              <p className="mt-5 flex-1 text-sm leading-relaxed text-gray-700">
+                {service.description}
+              </p>
+              <span className="mt-6 inline-flex items-center gap-2 font-semibold text-[#26374A] group-hover:text-[#b90a0a]">
+                Explore Service <span aria-hidden="true">-&gt;</span>
+              </span>
+            </Link>
+          ))}
         </div>
       </div>
-      <Footer />
     </section>
   );
 }
