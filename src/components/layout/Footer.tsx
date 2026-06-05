@@ -148,20 +148,20 @@ export default function Footer() {
       </div>
 
       {/* BOTTOM */}
-      <div className="mt-12 bg-white border-t border-gray-500/30 py-6 text-sm text-gray-800">
-        <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-center sm:text-right text-lg">
+      <div className="mt-12 bg-white border-t border-gray-500/30 py-2 text-sm text-gray-800">
+        <div className="max-w-6xl mx-auto px-6 items-center justify-between gap-4">
+          <p className="text-center  text-sm mt-5">
             Copyright © 2026 Walshkon Consultants | Powered by Walshkon
             Consultants
           </p>
 
-          <div className="max-w-lg">
+          {/* <div className="max-w-lg">
             <img
               src="https://www.canada.ca/etc/designs/canada/wet-boew/assets/wmms-blk.svg"
               alt="Canada Flag"
               className="w-full"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
