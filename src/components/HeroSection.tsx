@@ -108,7 +108,7 @@ export default function HeroSection() {
                 <Link
                   key={country.name}
                   href={country.href}
-                  className="group block overflow-hidden rounded-md border border-gray-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+                  className="group flex flex-col overflow-hidden rounded-md border border-gray-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
                 >
                   <div className="aspect-[4/3] overflow-hidden bg-gray-100">
                     <img
@@ -118,15 +118,18 @@ export default function HeroSection() {
                     />
                   </div>
 
-                  <div className="p-5">
+                  <div className="flex flex-1 flex-col p-5">
                     <div className="mb-4 h-1 w-14 bg-[#b90a0a]" />
+
                     <h2 className="text-2xl font-extrabold text-[#26374A]">
                       {country.name}
                     </h2>
-                    <p className="mt-3 min-h-[96px] text-sm leading-relaxed text-gray-700">
+
+                    <p className="mt-3 text-sm leading-relaxed text-gray-700">
                       {country.statement}
                     </p>
-                    <span className="mt-5 inline-flex rounded-md bg-[#26374A] px-4 py-2 text-sm font-semibold text-white transition group-hover:bg-[#444444]">
+
+                    <span className="mt-auto inline-flex rounded-md bg-[#26374A] px-4 py-2 text-sm font-semibold text-white transition group-hover:bg-[#444444]">
                       Explore Services
                     </span>
                   </div>
