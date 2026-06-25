@@ -67,7 +67,7 @@ export default function AboutPage() {
               >
                 {/* MAIN LARGE IMAGE */}
                 <img
-                  src="https://i0.wp.com/walshkonconsultants.com/wp-content/uploads/2026/01/studentVisa-D9mV2VIa-scaled.jpg?resize=768%2C512&ssl=1"
+                  src="about.jpeg"
                   className="rounded-2xl w-full h-[400px] object-cover shadow-2xl mb-12 lg:mb-0"
                   alt="Main Company View"
                 />
