@@ -3,6 +3,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Lato, Noto_Sans, Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
+import { Suspense } from "react";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -34,8 +35,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn("font-sans", geist.variable)}>
       <body className={`${lato.variable} ${notoSans.variable}`}>
-        <Header />
-        <main>{children}</main>
+        <Suspense fallback={null}>
+          <Header />
+        </Suspense>
+        <Suspense fallback={null}>
+          <main>{children}</main>
+        </Suspense>
         {/* <Footer /> */}
       </body>
     </html>

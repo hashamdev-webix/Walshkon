@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronLeft, ChevronRight, ShieldCheck } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
@@ -11,7 +11,7 @@ const countries = [
     image:
       "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=900&q=80",
     statement:
-      "India legal matters plus recruitment, IT, marketing, mortgage, real estate, finance, bookkeeping, and tax support.",
+      "India paralegal support plus recruitment, IT, marketing, debt recovery, mortgage, real estate, finance, bookkeeping, and tax services.",
   },
   {
     name: "Canada",
@@ -83,15 +83,6 @@ export default function HeroSection() {
               and guidance.
             </p>
 
-            <div className="mt-8 flex gap-4 rounded-md border border-gray-200 bg-gray-50 p-5">
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-red-500 border border-gray-300">
-                <ShieldCheck size={28} />
-              </div>
-              <p className="text-gray-700 leading-relaxed">
-                Structured professional support for immigration, legal, finance,
-                recruitment, IT, and related services.
-              </p>
-            </div>
           </div>
 
           <button

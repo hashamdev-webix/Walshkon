@@ -7,12 +7,16 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 const services = [
   { name: "Paralegal service in Canada", path: "/services/paralegal" },
   {
-    name: "Legal services for Indians – India matters",
-    path: "/services/legal",
+    name: "Paralegal Services in India",
+    path: "/services/paralegal-india?country=india",
   },
   { name: "Recruitment", path: "/services/recruitment" },
   { name: "IT Services", path: "/services/it-services" },
   { name: "Digital Marketing", path: "/services/digital-marketing" },
+  {
+    name: "Debt Recovery & Collections",
+    path: "/services/debt-recovery?country=india",
+  },
   { name: "Mortgage", path: "/services/mortgage" },
   { name: "Buy, Sell & Rent Homes", path: "/services/real-estate" },
   { name: "Finance", path: "/services/finance" },

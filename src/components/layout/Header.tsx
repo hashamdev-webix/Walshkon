@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 
 const landingMenuItems = [
   { name: "About", path: "/about" },
@@ -23,27 +23,39 @@ const sharedServices = [
 
 const defaultServices = [
   { name: "Paralegal services in Canada", path: "/services/paralegal" },
-  { name: "Legal services for Indians only - India matters", path: "/services/legal" },
+  { name: "Paralegal Services in India", path: "/services/paralegal-india" },
   ...sharedServices,
 ];
 
 export default function Header() {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
   const [open, setOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
 
   const isLandingPage = pathname === "/";
-  const countrySlug = pathname.startsWith("/countries/")
-    ? pathname.split("/")[2]
-    : "";
+  const countrySlug =
+    (pathname.startsWith("/countries/") ? pathname.split("/")[2] : "") ||
+    searchParams.get("country") ||
+    "";
   const services =
     countrySlug === "india"
       ? [
           {
-            name: "Legal services for Indians only - India matters",
-            path: "/services/legal",
+            name: "Paralegal Services in India",
+            path: "/services/paralegal-india",
           },
-          ...sharedServices,
+          ...sharedServices.flatMap((service) =>
+            service.path === "/services/digital-marketing"
+              ? [
+                  service,
+                  {
+                    name: "Debt Recovery & Collections",
+                    path: "/services/debt-recovery",
+                  },
+                ]
+              : [service],
+          ),
         ]
       : countrySlug === "canada"
         ? [
@@ -61,6 +73,9 @@ export default function Header() {
     setOpen(false);
     setServicesOpen(false);
   };
+
+  const serviceHref = (path: string) =>
+    countrySlug ? `${path}?country=${countrySlug}` : path;
 
   const toggleMenu = () => {
     setOpen((current) => {
@@ -166,7 +181,7 @@ export default function Header() {
                             <Link
                               onClick={closeMenu}
                               key={item.path}
-                              href={item.path}
+                              href={serviceHref(item.path)}
                               className="underline underline-offset-4 hover:text-[#b90a0a]"
                             >
                               {item.name}
@@ -244,7 +259,7 @@ export default function Header() {
                         {services.map((item) => (
                           <Link
                             key={item.path}
-                            href={item.path}
+                            href={serviceHref(item.path)}
                             onClick={closeMenu}
                             className="block px-8 py-3 text-sm border-t border-white/10"
                           >

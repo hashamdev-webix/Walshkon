@@ -1,13 +1,11 @@
 "use client";
 
 import HeroSection from "@/components/HeroSection";
-import ServicesSlider from "@/components/ServicesSlider";
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <div className="bg-white mt-12">
       <HeroSection />
-      <ServicesSlider />
     </div>
   );
 }

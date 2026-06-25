@@ -3,6 +3,7 @@ import {
   Building2,
   ChartNoAxesCombined,
   Calculator,
+  FileSearch,
   Gavel,
   Home,
   Laptop,
@@ -15,7 +16,7 @@ const countryPages = {
   india: {
     name: "India",
     intro:
-      "Select from India legal matters and professional business support services.",
+      "Select from India paralegal support and professional business services.",
   },
   canada: {
     name: "Canada",
@@ -83,12 +84,25 @@ const sharedServices = [
 const servicesByCountry = {
   india: [
     {
-      name: "Legal Services for Indians only - India matters",
-      href: "/services/legal",
-      description: "India-focused legal support for Indian matters.",
+      name: "Paralegal Services in India",
+      href: "/services/paralegal-india",
+      description: "Paralegal Support for Indian Matters.",
       Icon: Gavel,
     },
-    ...sharedServices,
+    ...sharedServices.flatMap((service) =>
+      service.href === "/services/digital-marketing"
+        ? [
+            service,
+            {
+              name: "Debt Recovery & Collections",
+              href: "/services/debt-recovery",
+              description:
+                "Effective debt recovery solutions to improve your cash flow.",
+              Icon: FileSearch,
+            },
+          ]
+        : [service],
+    ),
   ],
   canada: [
   {
@@ -151,7 +165,7 @@ export default async function CountryServicesPage({ params }: PageProps) {
           {services.map(({ Icon, ...service }) => (
             <Link
               key={service.href}
-              href={service.href}
+              href={`${service.href}?country=${slug}`}
               className="group flex min-h-[270px] flex-col rounded-md border border-gray-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
             >
               <div className="flex h-14 w-14 items-center justify-center rounded-md bg-[#26374A] text-white">
