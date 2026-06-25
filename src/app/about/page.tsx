@@ -74,7 +74,7 @@ export default function AboutPage() {
 
                 {/* SMALL FLOAT IMAGE */}
                 <motion.img
-                  src="https://i0.wp.com/walshkonconsultants.com/wp-content/uploads/2026/01/VisaImg-CwwY4Qzk.jpg?resize=300%2C169&ssl=1"
+                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29uc3VsdGF0aW9ufGVufDB8fDB8fHww"
                   className="absolute -bottom-28 ml-28 w-84 h-48 object-cover rounded-xl shadow-2xl border-4 border-blue-500"
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
@@ -208,7 +208,7 @@ export default function AboutPage() {
               </p>
 
               <img
-                src="https://i0.wp.com/walshkonconsultants.com/wp-content/uploads/2026/01/BusinessVisa-BM325Svr-scaled.jpg?w=1200&ssl=1"
+                src="https://images.unsplash.com/photo-1564041549956-3ad6fa9f5517?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fEltbWlncmF0aW9ufGVufDB8fDB8fHww"
                 alt="Immigration Services"
                 className="w-full h-56 object-cover rounded-[24px] border border-red-300 mt-auto"
               />
@@ -230,7 +230,7 @@ export default function AboutPage() {
               </p>
 
               <img
-                src="https://i0.wp.com/walshkonconsultants.com/wp-content/uploads/2026/01/studentVisa-D9mV2VIa-scaled.jpg?w=1200&ssl=1"
+                src="https://images.unsplash.com/photo-1562564055-71e051d33c19?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fExlZ2FsJTIwU2VydmljZXN8ZW58MHx8MHx8fDA%3D"
                 alt="Legal Services"
                 className="w-full h-56 object-cover rounded-[24px] border border-red-300 mt-auto"
               />
@@ -251,7 +251,7 @@ export default function AboutPage() {
               </p>
 
               <img
-                src="https://i0.wp.com/walshkonconsultants.com/wp-content/uploads/2026/01/WorkVisa-Doae4KIL-scaled.jpg?w=1200&ssl=1"
+                src="https://images.unsplash.com/photo-1758518730384-be3d205838e8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8UmVjcnVpdG1lbnQlMjBTb2x1dGlvbnxlbnwwfHwwfHx8MA%3D%3D"
                 alt="Recruitment Solution"
                 className="w-full h-56 object-cover rounded-[24px] border border-red-300 mt-auto"
               />
@@ -272,7 +272,7 @@ export default function AboutPage() {
               </p>
 
               <img
-                src="https://i0.wp.com/walshkonconsultants.com/wp-content/uploads/2026/01/BlogImage4-HsOfMRnz-scaled.jpg?w=1200&ssl=1"
+                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8SVQlMjBTZXJ2aWNlc3xlbnwwfHwwfHx8MA%3D%3D"
                 alt="IT Services"
                 className="w-full h-56 object-cover rounded-[24px] border border-red-300 mt-auto"
               />
