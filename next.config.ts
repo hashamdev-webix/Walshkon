@@ -9,6 +9,20 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/services/immigration',
+        destination: '/', // Redirects instantly to the homepage
+        permanent: true,  // 301 Permanent redirect (tells Google to remove it from search results)
+      },
+      {
+        source: '/services/immigration/:path*',
+        destination: '/',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
