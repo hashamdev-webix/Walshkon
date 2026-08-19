@@ -6,7 +6,8 @@ import { motion, Variants } from "framer-motion";
 const testimonials = [
   {
     title: "Professional Guidance",
-    desc: "Walshkon Consultants handled my immigration process smoothly. Highly reliable professionals.",
+    // desc: "Walshkon Consultants handled my immigration process smoothly. Highly reliable professionals.",
+    desc: "Walshkon Consultants handled our business consulting requirements smoothly and efficiently. Highly reliable professionals.",
     name: "John Smith",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
   },
