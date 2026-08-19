@@ -47,9 +47,11 @@ export default function Footer() {
           </Link>
 
           <p className="text-sm text-gray-300 leading-relaxed mb-6">
-            Dedicated to providing quality education and fostering holistic
+            {/* Dedicated to providing quality education and fostering holistic
             growth. We strive to create a supportive environment where every
-            student learns and grows.
+            student learns and grows. */}
+            Dedicated to providing professional consulting, business solutions,
+            and specialized advisory services tailored to meet our clients' diverse needs.
           </p>
 
           {/* SOCIAL ICONS */}
