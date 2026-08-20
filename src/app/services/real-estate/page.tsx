@@ -88,7 +88,7 @@ export default function RealEstatePage() {
                 desc: "Professional evaluation of homes to determine accurate market prices.",
               },
               {
-                title: "Legal Documentation",
+                title: "Paralegal Documentation",
                 desc: "Support with all paperwork and contracts to ensure compliance.",
               },
               {
