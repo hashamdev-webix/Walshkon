@@ -108,7 +108,7 @@ const servicesByCountry = {
   {
     name: "Paralegal Services in Canada",
     href: "/services/paralegal",
-    description: "Legal documentation and paralegal support.",
+    description: "Paralegal documentation and support.",
     Icon: Gavel,
   },
     ...sharedServices,
