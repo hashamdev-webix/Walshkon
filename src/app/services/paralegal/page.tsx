@@ -50,8 +50,8 @@
 //             variants={fadeUp}
 //             className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto"
 //           >
-//             Expert Paralegal support for immigration, legal paperwork, and
-//             advisory services. Simplifying complex Canadian legal processes for
+//             Expert Paralegal support for immigration, Paralegal paperwork, and
+//             advisory services. Simplifying complex Canadian Paralegal processes for
 //             individuals and businesses.
 //           </motion.p>
 //         </motion.div>
@@ -374,8 +374,8 @@ export default function Page() {
             variants={fadeUp}
             className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto"
           >
-            Expert paralegal support for legal documentation, dispute resolution,
-            and regulatory advisory services. Simplifying complex Canadian legal
+            Expert paralegal support for paralegal documentation, dispute resolution,
+            and regulatory advisory services. Simplifying complex Canadian Paralegal
             procedures for individuals and businesses.
           </motion.p>
         </motion.div>
@@ -404,8 +404,8 @@ export default function Page() {
                 desc: "Assistance with small claims court matters, administrative tribunal representation, and procedural hearings.",
               },
               {
-                title: "Legal Documentation & Affidavits",
-                desc: "Drafting, commissioning, reviewing, and filing legal forms in accordance with Canadian regulations.",
+                title: "Paralegal Documentation & Affidavits",
+                desc: "Drafting, commissioning, reviewing, and filing Paralegal forms in accordance with Canadian regulations.",
               },
               {
                 title: "Compliance & Advisory",
@@ -443,10 +443,10 @@ export default function Page() {
             variants={fadeUp}
             className="text-lg text-muted-foreground leading-relaxed"
           >
-            Paralegals in Canada are trained legal professionals authorized to
-            provide specialized legal services. Our paralegal team assists
+            Paralegals in Canada are trained Paralegal professionals authorized to
+            provide specialized Paralegal services. Our paralegal team assists
             clients with small claims, tribunal proceedings, statutory
-            declarations, affidavits, and procedural legal advice within their
+            declarations, affidavits, and procedural Paralegal advice within their
             authorized scope of practice.
           </motion.p>
         </motion.div>
@@ -474,7 +474,7 @@ export default function Page() {
             {[
               {
                 title: "Authorized Professionals",
-                desc: "Qualified legal practitioners operating strictly within their licensed scope in Canada.",
+                desc: "Qualified Paralegal practitioners operating strictly within their licensed scope in Canada.",
               },
               {
                 title: "Transparent Fees",
@@ -482,7 +482,7 @@ export default function Page() {
               },
               {
                 title: "Personalized Guidance",
-                desc: "Tailored solutions based on your individual legal and procedural needs.",
+                desc: "Tailored solutions based on your individual Paralegal and procedural needs.",
               },
             ].map((item, i) => (
               <motion.div
@@ -527,7 +527,7 @@ export default function Page() {
             {[
               {
                 title: "Consultation",
-                desc: "Understanding your matter, documentation, and specific legal objectives.",
+                desc: "Understanding your matter, documentation, and specific Paralegal objectives.",
               },
               {
                 title: "Documentation",
@@ -585,14 +585,14 @@ export default function Page() {
             {[
               {
                 title: "Cost-Effective",
-                desc: "Affordable and accessible legal assistance for your routine matters.",
+                desc: "Affordable and accessible Paralegal assistance for your routine matters.",
               },
               {
                 title: "Time-Saving",
                 desc: "Expert handling of forms and filings reduces unnecessary delays.",
               },
               {
-                title: "Legal Accuracy",
+                title: "Paralegal Accuracy",
                 desc: "Ensures compliance with Canadian statutory standards and court rules.",
               },
               {
